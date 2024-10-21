@@ -94,6 +94,26 @@ footer .social-links a:hover {
     body {
         background-color: lightblue;
     }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 45%;
+        margin-bottom: 10px;
+    }
 }
 
 /* Стили для планшетов */
