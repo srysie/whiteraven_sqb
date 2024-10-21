@@ -1,0 +1,111 @@
+body {
+    background: url('/img/fon2.jpg') no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    color: white;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid orange;
+}
+
+.logo {
+    padding: 0 30px;
+}
+
+nav ul, nav a{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+}
+
+nav a:hover {
+    color: red;
+    transition: color 0.8s;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap; /* разрешает перенос блоков на новую строку */
+    justify-content: space-around; /* равномерно распределяет блоки */
+    gap: 20px; /* расстояние между блоками */
+    max-width: 1200px; /* максимальная ширина главного контейнера */
+    margin: 30px auto; /* центрирование контейнера */
+}
+
+section {
+    background-color: rgba(50, 50, 50, 0.8); /* темно-серый с прозрачностью */
+    border-radius: 10px; /* скругленные углы */
+    padding: 20px; /* отступы внутри блока */
+    transition: transform 0.3s, background-color 0.3s; /* анимация при наведении */
+    width: calc(30% - 20px); /* ширина блоков с учетом внешних отступов */
+    box-sizing: border-box; /* включает отступы и границы в общую ширину */
+}
+
+section:hover {
+    transform: scale(1.05); /* увеличение при наведении */
+    background-color: rgba(70, 70, 70, 0.9); /* цвет при наведении */
+}
+
+section:active {
+    transform: scale(0.95); /* уменьшение при нажатии */
+}
+
+footer {
+    background-color: black; /* темно-серый фон */
+    color: #fff; /* белый цвет текста */
+    text-align: center; /* центрирование текста */
+    padding: 20px; /* отступы внутри футера */
+    border-radius: 10px 10px 0 0; /* скругление верхних углов */
+    border-top: 2px solid orange;
+    margin-top: 33px; /* отступ сверху */
+}
+
+footer .social-links {
+    margin-top: 10px; /* отступ между текстом и ссылками */
+}
+
+footer .social-links a {
+    color: #fff; /* белый цвет ссылок */
+    margin: 0 10px; /* расстояние между ссылками */
+    text-decoration: none; /* убрать подчеркивание */
+    transition: color 0.3s; /* плавное изменение цвета при наведении */
+}
+
+footer .social-links a:hover {
+    color: #1e90ff; /* цвет при наведении */
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Стили для планшетов */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+/* Стили для десктопов */
+@media (min-width: 1025px) {
+    body {
+        background-color: lightcoral;
+    }
+}
